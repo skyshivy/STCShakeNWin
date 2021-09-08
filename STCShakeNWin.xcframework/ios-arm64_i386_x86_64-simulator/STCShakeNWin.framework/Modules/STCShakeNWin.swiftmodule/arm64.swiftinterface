@@ -1,0 +1,24 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name STCShakeNWin
+import Foundation
+@_exported import STCShakeNWin
+import Swift
+import SystemConfiguration
+import UIKit
+public enum GameAction {
+  case dismiss
+  case onSuccess
+  case tokenExpired
+  case error(_: Swift.String, _: Swift.String)
+}
+@_hasMissingDesignatedInitializers public class Game {
+  public class func updateToken(token: Swift.String)
+  public class func openGame(controller: UIKit.UIViewController, mobileNumber: Swift.String?, language: Swift.String, nationalId: Swift.String, nationalIdType: Swift.String, gameType: Swift.String, apiKey: Swift.String, gameid: Swift.String?, token: Swift.String, complition: ((STCShakeNWin.GameAction) -> Swift.Void)?)
+  public class func dismissController()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Reachability {
+  public func isConnectedToNetwork() -> Swift.Bool
+  @objc deinit
+}

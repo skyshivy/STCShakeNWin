@@ -1,0 +1,11 @@
+framework module STCShakeNWin {
+  umbrella header "STCShakeNWin.h"
+
+  export *
+  module * { export * }
+}
+
+module STCShakeNWin.Swift {
+    header "STCShakeNWin-Swift.h"
+    requires objc
+}
