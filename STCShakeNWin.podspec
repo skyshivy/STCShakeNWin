@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'STCShakeNWin'
-  spec.version      = '0.1.0'
+  spec.version      = '0.1.1'
   spec.summary      = 'STCShakeNWin framework'
   spec.description  = <<-DESC
 	import STCShakeNWin framework and implement methods
